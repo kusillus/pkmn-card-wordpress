@@ -1,0 +1,422 @@
+$green: #67A72F;
+$white: #FFFFFF;
+$bg-card: #F6F6F6;
+$grey: #CCC;
+$orange: #EE5736;
+$purple: #753FB5;
+
+// Type table color
+$normal: #aa9;
+$fire:#f42;
+$water:#39f;
+$electric: #fc3;
+$grass:#7c5;
+$ice:#6cf;
+$fighting:#b54;
+$poison:#a59;
+$ground:#db5;
+$flying:#89f;
+$psychic:#f59;
+$bug:#ab2;
+$rock:#ba6;
+$gost:#66b;
+$dragon:#76e;
+$dark:#754;
+$steel:#aab;
+$fairy:#e9e;
+
+$title-color:#004689;
+
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.pkmn-slot{
+	max-width: 600px;
+	div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	.pkmn-container{
+		background: $bg-card;
+		display:flex;
+		flex-flow: row wrap;
+	}
+	.pkmn-header-card{
+		width: 100%;
+		background-color: $orange;
+		color: $white;
+		display: flex;
+		justify-content: space-between;
+		padding: 4px 10px;
+		.pkmn-sex-icon{
+			height: 100%;
+			background: white;
+			width: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			justify-content: center;
+			position: relative;
+			padding-right: 5px;
+			margin-left:13px;
+			&::before{
+				content: '';
+				position: absolute;
+				left: -13px;
+				border: solid;
+				border-color: transparent $white transparent transparent;
+				border-width: 30px 13px 0px 0px;
+			}
+		}
+	}
+	.pkm-img{
+		width: 100px;
+	    background: white;
+	    border: solid 1px $grey;
+	    box-sizing: border-box;
+	    padding: 8px;
+	}
+	.flex-align-center{
+		display: flex;
+		align-items: center;
+	}
+	.pa3{
+		padding: 10px;
+	}
+	.pa2{
+		padding: 5px;
+	}
+	.pkmn_types{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.pkmn-type{
+		font-size: 10px;
+		border-radius: 4px;
+		padding: 2px 7px;
+		box-sizing: border-box;
+		color: $white;
+	}
+	.pkmn-data-card{
+		padding: 0 0 5px 0;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.pkmn-moves{
+		padding-left: 5px;
+		.pkmn_move{
+			font-weight: bold;
+			font-size:12px;
+			padding: 5px;
+			margin-top:1px;
+			border-bottom: solid 1px $grey;
+			&:first-child{
+				border-top: solid 1px $grey;
+				margin-top:0;
+			}
+		}
+	}
+	.pkmn-right{
+		width:calc(100% - 100px);
+	}
+	.pkmn_table_stats{
+		width:100%;
+	}
+	.pkmn-nature{
+			border: solid 1px #ccc;
+			font-size: 12px;
+			padding: 5px;
+	}
+	.pkmn-items-card{
+		display: flex;
+		border: solid 1px #ccc;
+		.pkmn-ability, .pkmn-item{
+			font-size: 12px;
+			padding: 5px;
+		}
+		.pkmn-ability{
+			border-right: solid 1px #ccc;
+			border-bottom: solid 1px #ccc;
+		}
+		.pkmn-item-img{
+			width: 30px;
+		}
+	}
+
+	.pkmn-title-bold{
+		font-weight:bold;
+		color: #565656;
+	}
+
+	.pl2{
+		padding-left:5px;
+	}
+
+
+	.bt_{
+		&normal{
+			border-right: solid 4px $normal;
+
+		}
+		&fire{
+			border-right: solid 4px $fire;
+
+		}
+		&water{
+			border-right: solid 4px $water;
+
+		}
+		&electric{
+			border-right: solid 4px $electric;
+
+		}
+		&grass{
+			border-right: solid 4px $grass;
+
+		}
+		&ice{
+			border-right: solid 4px $ice;
+
+		}
+		&fighting{
+			border-right: solid 4px $fighting;
+
+		}
+		&poison{
+			border-right: solid 4px $poison;
+
+		}
+		&ground{
+			border-right: solid 4px $ground;
+
+		}
+		&flying{
+			border-right: solid 4px $flying;
+
+		}
+		&psychic{
+			border-right: solid 4px $psychic;
+
+		}
+		&bug{
+			border-right: solid 4px $bug;
+
+		}
+		&rock{
+			border-right: solid 4px $rock;
+
+		}
+		&gost{
+			border-right: solid 4px $gost;
+
+		}
+		&dragon{
+			border-right: solid 4px $dragon;
+
+		}
+		&dark{
+			border-right: solid 4px $dark;
+
+		}
+		&steel{
+			border-right: solid 4px $steel;
+
+		}
+		&fairy{
+			border-right: solid 4px $fairy;
+
+		}
+	}
+
+	.c_type_{
+		&normal{
+			background-color: $normal;
+		}
+		&fire{
+			background-color: $fire;
+		}
+		&water{
+			background-color: $water;
+		}
+		&electric{
+			background-color: $electric;
+		}
+		&grass{
+			background-color: $grass;
+		}
+		&ice{
+			background-color: $ice;
+		}
+		&fighting{
+			background-color: $fighting;
+		}
+		&poison{
+			background-color: $poison;
+		}
+		&ground{
+			background-color: $ground;
+		}
+		&flying{
+			background-color: $flying;
+		}
+		&psychic{
+			background-color: $psychic;
+		}
+		&bug{
+			background-color: $bug;
+		}
+		&rock{
+			background-color: $rock;
+		}
+		&gost{
+			background-color: $gost;
+		}
+		&dragon{
+			background-color: $dragon;
+		}
+		&dark{
+			background-color: $dark;
+		}
+		&steel{
+			background-color: $steel;
+		}
+		&fairy{
+			background-color: $fairy;
+		}
+	}
+
+	.pkmn-stats-card{
+		// display: flex;
+		font-size: 12px;
+		border: solid 1px rgb(204, 204, 204);
+		padding: 5px;
+		border-top: none;
+		.pkmn_table_stats{
+			.ta-r{
+				text-align: center;
+			}
+			td{
+				padding: 5px;
+				border-bottom: solid 1px #ccc;
+				// &:first-child, &:last-child{
+				// 	border-bottom: none;
+				// }
+			}
+			&.title_stats{
+				div:first-child{
+					height: 14px;
+				}
+			}
+			.bbn{
+				border-bottom:none;
+			}
+		}
+	}
+
+	.pkmn-title-statistics{
+		font-size: 16px;
+		color: #fff;
+		padding: 5px;
+		border-bottom: solid 2px;
+		display: flex;
+		align-items: center;
+		background-color: $purple;
+	}
+	.w_100{
+		width: 100%;
+	}
+	.w_80px{
+		width: 80px;
+	}
+	.t_right{
+		text-align: right;
+	}
+	.title_stats{
+		width: 150px;
+	}
+	.pkmn_name, .title-statistics{
+		margin-left: 10px;
+	}
+	.pkmn_footer{
+		font-size: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: right;
+		background: $bg-card;
+		padding: 10px;
+		a {
+			margin-left: 3px;
+			text-decoration:none;
+			color: $purple;
+		}
+		img {
+			margin: 0 3px;
+		}
+	}
+
+	.pkmn_col_principal{
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	.buff-color{
+		color: $water!important;
+	}
+	.debuff-color{
+		color: $fire!important;
+	}
+
+	.pkmn_col{
+		.ev{
+			height: 14px;
+		}
+	}
+
+	.flex-justify-center{
+		display: flex;
+		justify-content: center;
+	}
+	.icon-footer-like{
+		margin: 0 5px;
+	}
+
+	@media screen and (max-width: 550px){
+		.pkmn_col_principal{
+			width: 100%;
+			box-sizing: border-box;
+
+			// &:last-child{
+			// 	padding-top: 0;
+			// }
+		}
+		// .first{
+		// 		padding-bottom: 0!important;
+		// }
+		// .pkmn-nature {
+		// 	border-top: none;
+		// }
+	}
+
+}
+
+
