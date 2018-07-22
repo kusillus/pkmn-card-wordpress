@@ -1,5 +1,4 @@
 import './style.scss';
-console.log('QUe paso');
 
 (function(){
 	var allTagsPkmn = document.querySelectorAll('.pkmn-slot');
