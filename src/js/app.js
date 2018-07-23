@@ -1,4 +1,5 @@
-import './style.scss';
+// import './style.scss';
+import '../css/app.css';
 
 (function(){
 	var allTagsPkmn = document.querySelectorAll('.pkmn-slot');
