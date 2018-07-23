@@ -13,7 +13,7 @@ import './style.scss';
 function loadWrapper(nametag){
 	var wrapperPkmn = '<div class="pkmn-container"><div class="pkmn-header-card"><div class="flex-align-center"> <svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="30" width="30" viewBox="0 0 256 256"> <metadata id="metadata7"> <rdf:RDF> <cc:Work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/> <dc:title/> </cc:Work> </rdf:RDF> </metadata> <path id="mainsymbolpath" style="opacity:0.9;fill:#FFFFFF;fill-opacity:1;stroke:none" d="m 154.54015,127.99605 c 0,14.65791 -11.88258,26.5405 -26.54049,26.5405 -14.65792,0 -26.5405,-11.88259 -26.5405,-26.5405 0,-14.65791 11.88258,-26.5405 26.5405,-26.5405 14.65791,0 26.54049,11.88259 26.54049,26.5405 z M 127.98849,38 C 82.019956,38 44.102136,72.45551 38.65601,116.95141 l 48.360613,0 c 4.858969,-18.07571 21.360667,-31.3734 40.971867,-31.3734 19.6112,0 36.13066,13.29769 40.99488,31.3734 l 48.36062,0 C 211.8949,72.45551 173.95702,38 127.98849,38 z M 38.65601,139.04859 C 44.102136,183.54449 82.019956,218 127.98849,218 c 45.96853,0 83.90641,-34.45551 89.3555,-78.95141 l -48.36062,0 c -4.86422,18.07571 -21.38368,31.37341 -40.99488,31.37341 -19.6112,0 -36.112898,-13.2977 -40.971867,-31.37341 l -48.360613,0 z"/> </svg> <span class="pkmn_name"></span></div><div class="flex-align-center"><div> Lv. <span class="pkmn_lv"></span></div> <span class="pkmn-sex-icon"> <i class="pkmn_img_icon"></i> </span></div></div><div class="pa2 pkmn_col_principal first"><div class="pkmn-data-card"><div class="pkmn-left"> <img id="" class="pkm-img" src=""><div class="w_100 pkmn_types"> <span class="pkmn-type ty_1"></span> <span id="ty_2" class="pkmn-type ty_2"></span></div></div><div class="pkmn-right"><div class="pkmn-moves"><div class="pkmn_move move_one"></div><div class="pkmn_move move_two"></div><div class="pkmn_move move_three"></div><div class="pkmn_move move_four"></div></div></div></div><div class="pkmn-items-card"><div class="w_100"><div class="pkmn-ability"> <span class="pkmn-title-bold">Habilidad:</span><span class="pl2 pkmn_ability"></span></div><div class="pkmn-item"> <span class="pkmn-title-bold">Objeto:</span><span class="pl2 pkmn_item"></span></div></div><div class="w_80px flex-align-center flex-justify-center pa3"> <img class="pkmn-item-img" src=""></div></div></div><div class="pa2 pkmn_col_principal"><div class="pkmn-nature"> <span class="pkmn-title-bold">Naturaleza:</span><span class="pl2 pkmn_nature"></span></div><div class="pkmn-stats-card"><table class="pkmn_table_stats" cellspacing="0"><tr><td class=""></td><td class="pkmn-title-bold ta-r ">BASE</td><td class="pkmn-title-bold ta-r ">EVS</td></tr><tr><td class="pkmn-title-bold stat_ps">PS</td><td class="base_ps ta-r"></td><td class="ev_hp ta-r"></td></tr><tr><td class="pkmn-title-bold stat_att">Ataque</td><td class="base_att ta-r"></td><td class="ev_att ta-r"></td></tr><tr><td class="pkmn-title-bold stat_def">Defensa</td><td class="base_def ta-r"></td><td class="ev_def ta-r"></td></tr><tr><td class="pkmn-title-bold stat_spa">At. Esp</td><td class="base_spa ta-r"></td><td class="ev_spa ta-r"></td></tr><tr><td class="pkmn-title-bold stat_spd">Def. Esp</td><td class="base_spd ta-r"></td><td class="ev_spd ta-r"></td></tr><tr><td class="pkmn-title-bold bbn stat_vel">Vel.</td><td class="base_vel ta-r bbn"></td><td class="ev_vel ta-r bbn"></td></tr></table></div></div></div><div class="pkmn_footer"> Hecho con <i class="icon-footer-like"> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="10" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path style="fill:#D75A4A;" d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/> </svg> </i> por <a href="https://kusillus.github.io/kusillus/" target="_blank">kusillus</a></div>';
 	var divPkmnTarget = document.getElementById(nametag);
-	divPkmnTarget.innerHTML = wrapperPkmn
+	// divPkmnTarget.innerHTML = wrapperPkmn
 	loadPokemon(nametag);
 
 
@@ -90,8 +90,32 @@ function loadPokemon(nametag) {
 		el.querySelectorAll('.ev_spd')[0].textContent = pkmn.ev_spd;
 		el.querySelectorAll('.ev_vel')[0].textContent = pkmn.ev_vel;
 
+		el.querySelectorAll('.iv_hp')[0].textContent = pkmn.iv_hp;
+		el.querySelectorAll('.iv_att')[0].textContent = pkmn.iv_att;
+		el.querySelectorAll('.iv_def')[0].textContent = pkmn.iv_def;
+		el.querySelectorAll('.iv_spa')[0].textContent = pkmn.iv_spa;
+		el.querySelectorAll('.iv_spd')[0].textContent = pkmn.iv_spd;
+		el.querySelectorAll('.iv_vel')[0].textContent = pkmn.iv_vel;
+		console.log('Lv : '+pkmn.level)
+		console.log('base hp : '+pkmn.hp)
+		console.log('iv : '+pkmn.iv_hp)
+		console.log('ev : '+pkmn.ev_hp)
+
+		var ev = Math.sqrt(parseInt(pkmn.ev_hp)) / 4
+
+		var total_hp = 10 + (parseInt(pkmn.level) / 100 *  ((parseInt(pkmn.hp) * 2) + parseInt(pkmn.iv_hp) + ev ) ) + parseInt(pkmn.level)
+
+		el.querySelectorAll('.total_hp')[0].textContent = total_hp;
+		el.querySelectorAll('.total_att')[0].textContent = pkmn.ev_att;
+		el.querySelectorAll('.total_def')[0].textContent = pkmn.ev_def;
+		el.querySelectorAll('.total_spa')[0].textContent = pkmn.ev_spa;
+		el.querySelectorAll('.total_spd')[0].textContent = pkmn.ev_spd;
+		el.querySelectorAll('.total_vel')[0].textContent = pkmn.ev_vel;
+
+		
+		// parseInt(pkmn.hp) + parseInt(pkmn.ev_hp) parseInt(pkmn.iv_hp) parseInt(pkmn.level)
+
 		el.querySelectorAll('.'+pkmn.stat_buff)[0].className += ' buff-color';
-		console.log(pkmn.stat_buff)
 		el.querySelectorAll('.'+pkmn.stat_debuff)[0].className += ' debuff-color';
 	}
 

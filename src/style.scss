@@ -67,6 +67,8 @@ body{
 		display: flex;
 		justify-content: space-between;
 		padding: 4px 10px;
+		box-sizing: border-box;
+		margin-bottom: 8px;
 		.pkmn-sex-icon{
 			height: 100%;
 			background: white;
@@ -94,13 +96,15 @@ body{
 	    border: solid 1px $grey;
 	    box-sizing: border-box;
 	    padding: 8px;
+	    maegin-bottom:1px;
+	    height: 101px;
 	}
 	.flex-align-center{
 		display: flex;
 		align-items: center;
 	}
 	.pa3{
-		padding: 10px;
+		padding: 0 10px;
 	}
 	.pa2{
 		padding: 5px;
@@ -146,6 +150,7 @@ body{
 			border: solid 1px #ccc;
 			font-size: 12px;
 			padding: 5px;
+			border-top: none;
 	}
 	.pkmn-items-card{
 		display: flex;
@@ -159,7 +164,7 @@ body{
 			border-bottom: solid 1px #ccc;
 		}
 		.pkmn-item-img{
-			width: 30px;
+			width: 40px;
 		}
 	}
 
@@ -310,13 +315,12 @@ body{
 		font-size: 12px;
 		border: solid 1px rgb(204, 204, 204);
 		padding: 5px;
-		border-top: none;
 		.pkmn_table_stats{
-			.ta-r{
+			.ta-c{
 				text-align: center;
 			}
 			td{
-				padding: 5px;
+				padding: 6px;
 				border-bottom: solid 1px #ccc;
 				// &:first-child, &:last-child{
 				// 	border-bottom: none;
@@ -336,11 +340,12 @@ body{
 	.pkmn-title-statistics{
 		font-size: 16px;
 		color: #fff;
-		padding: 5px;
+		padding: 7px 5px 6px;
 		border-bottom: solid 2px;
 		display: flex;
 		align-items: center;
 		background-color: $purple;
+		margin-bottom: 6px;
 	}
 	.w_100{
 		width: 100%;
