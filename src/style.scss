@@ -55,6 +55,18 @@ body{
 		font: inherit;
 		vertical-align: baseline;
 	}
+	table, caption, tbody, tfoot, thead, tr, th, td {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font-size: 100%;
+	  font: inherit;
+	  vertical-align: baseline;
+	}
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	}
 	.pkmn-container{
 		background: $bg-card;
 		display:flex;
@@ -345,7 +357,7 @@ body{
 		display: flex;
 		align-items: center;
 		background-color: $purple;
-		margin-bottom: 6px;
+		margin-bottom: 5px;
 	}
 	.w_100{
 		width: 100%;
