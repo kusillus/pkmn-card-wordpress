@@ -106,6 +106,10 @@ function loadPokemon(nametag) {
 
 		el.querySelectorAll('.'+pkmn.stat_buff)[0].className += ' buff-color';
 		el.querySelectorAll('.'+pkmn.stat_debuff)[0].className += ' debuff-color';
+
+		el.querySelectorAll('.pkmn-header-card')[0].style.background = pkmn.color_bar_1 ;
+		el.querySelectorAll('.pkmn-title-statistics')[0].style.background = pkmn.color_bar_2 ;
+		
 	}
 
 function validateType(pkmn_type){
