@@ -2,12 +2,9 @@ import './style.scss';
 
 (function(){
 	var allTagsPkmn = document.querySelectorAll('.pkmn-slot');
-	console.log(allTagsPkmn)
 	Object.keys(allTagsPkmn).forEach(function(i){
-		// console.log(allTagsPkmn[i].id)
 		loadWrapper(allTagsPkmn[i].id)	
 	})
-	// loadWrapper('pkmn_slot_01')
 })(); //end 
 
 function loadWrapper(nametag){
@@ -52,12 +49,13 @@ function loadPokemon(nametag) {
 		el.querySelectorAll('.ty_1')[0].className += ' ' + type1[1];
 
 		// Cuando no tiene segundo tipo se agrega none
+		console.log(pkmn.type2)
 		if(pkmn.type2 !== 'none'){
 			var type2 = validateType(pkmn.type2)
 			el.querySelectorAll('.ty_2')[0].textContent = type2[0];
 			el.querySelectorAll('.ty_2')[0].className += ' ' + type2[1];
 		} else {
-			var delType = document.getElementById('ty_2')
+			var delType = el.querySelectorAll('.ty_2')[0]
 			delType.parentNode.removeChild(delType);
 		}
 
